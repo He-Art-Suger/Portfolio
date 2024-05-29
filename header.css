@@ -1,0 +1,80 @@
+#header_img img{
+    width: 100%;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.details {
+    text-align: center;
+    height: 40px;
+    width: 25%;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+
+/*
+.details[open] .header_summary{
+    background-color: #ac0025;
+    font-weight: bold;
+}
+*/
+
+.details .header_summary:hover{
+    background-color: #ac0025;
+    display: block;
+}
+
+#header .menu .details .header_summary li{
+    display: none;
+}
+
+#header .menu .details .header_summary li:hover{
+    display: block;
+}
+
+/**********メニュー欄の仕様**********/
+.header_summary {
+    display: block;
+    list-style: none;
+    background-color: #7f001b;
+    border: solid 1px #000;
+    color: #fff;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    flex-grow: 1;
+}
+
+.header_summary::-webkit-details-marker {
+    display: none;
+}
+
+.header_summary {
+    cursor: pointer;
+}
+
+.summary_lists{
+    background-color: #333;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.summary_lists li{
+    display: block;
+    list-style: none;
+}
+
+.summary_lists li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.summary_lists li:hover {
+    background-color: #c5002a;
+    font-weight: bold;
+}

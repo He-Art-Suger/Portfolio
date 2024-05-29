@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--文書タイプ, おまじない-->
+
+<html lang="ja">
+<!--ホームページの言語-->
+
+<head>
+ <!--headタグ開始-->
+
+ <meta charset="utf-8">
+ <!--文字コード-->
+
+ <title>Shin's portfolio</title>
+ <!--webサイトタイトル-->
+
+ <meta name="description" content="ポートフォリオ">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!--ディスクリプション（サイトの概要）-->
+
+ <link rel="stylesheet" href="header.css">
+ <link rel="stylesheet" href="position.css">
+ <link rel="stylesheet" href="main.css">
+ <link rel="stylesheet" href="aside.css">
+ <link rel="stylesheet" href="footer.css">
+<!--CSSのファイルをhrefに指定（相対パス）-->
+
+ <!-- [if lt IE 9] -->
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+ <!-- [endif] -->
+ <script src="navclick.js"></script>
+
+
+</head>
+<!--headタグ終了-->
+
+<body>
+<!--body-->
+
+    <!----- header----->
+    <header id="header">
+        <div id="header_img">
+            <img src="/images/header.png">
+        </div>
+        <div class="menu">
+            <details class="details">
+                <summary class="header_summary">T O P</summary>
+                    <div class="summary_lists">
+                        <li><a href="index.html#Profile">Profile</li>
+                        <li><a href="index.html#Information">Information</a></li>
+                        <li><a href="index.html#Links">Links</a></li>
+                    </div>
+            </details>
+            <details class="details">
+                <summary class="header_summary">L a n g u a g e</summary>
+                    <div class="summary_lists">
+                        <li>C</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                    </div>
+            </details>
+            <details class="details">
+                <summary class="header_summary">S t r e n g t h</summary>
+                    <div class="summary_lists">
+                        <li><a href="#DevelopmentExperience">Development Experience</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Personality">Personality</a></li>
+                    </div>
+            </details>
+            <details class="details">
+                <summary class="header_summary">O u t p u t</summary>
+                    <div class="summary_lists">
+                        <li>オセロゲーム</li>
+                        <li>神経衰弱</li>
+                        <li>双六ゲームのUI</li>
+                        <li>LINE謎</li>
+                    </div>
+            </details>
+        </div>
+    </header>
+    <!----- /header ----->
+
+    <div class="position">
+        <!----- main -----> 
+        <article id="main">
+            <div id="DevelopmentExperience"><div class="title">Development Experience</div></div>
+            <p>氏名 : 佐藤 心</p>
+            <p>生年月日 : 2001年11月10日</p>
+            <p>所属 : 横浜国立大学大学院 環境情報学府<br>
+                〒240-8501
+                神奈川県横浜市保土ケ谷区常盤台79-1</p>
+            <div id="Skills"><div class="title">Skills</div></div>
+            <img src="/images/eagles1.jpg">
+            <div id="Personality"><div class="title">Personality</div></div>
+                <div class="github">
+                    <p>GitHub:<a href="https://github.com/He-Art-Suger"><img src="/images/github.png"
+                        alt="Github" width="50" height="50"></a></p>
+        </article>
+        <!----- /main ----->
+
+        <!----- aside ----->
+        <aside id="aside">
+            <div class="aside_topic">
+                <div class="aside_title"><div class="aside_initial">Strength</div></div>
+                <div class="aside_lists">
+                    <li><a href="#DevelopmentExperience" class="aside_item">Development Experience</a></li>
+                    <li><a href="#Skills" class="aside_item">Skills</a></li>
+                    <li><a href="#Personality" class="aside_item">Personality</a></li>
+                </div>
+            </div>
+        </aside>
+    <!----- /aside ----->
+    </div>
+
+    <!----- footer ----->
+    <footer>   
+        <div class="footer">
+            <div class="my_about">
+                <div class="myprofile">
+                    <p>My Profile</p>
+                </div>
+                    <div class="my_name">
+                        <p>氏名 : 佐藤 心</p>
+                    </div>
+                    <div class="my_birthday">
+                        <p>生年月日 : 2001年11月10日</p>
+                    </div>
+                    <div class="my_org">
+                        <p>所属 : 横浜国立大学大学院 環境情報学府<br>
+                            〒240-8501
+                            神奈川県横浜市保土ケ谷区常盤台79-1</p>
+                        <p>
+                    </div>
+            </div>
+        </div>
+        <div class="sns">
+            <div class="X">
+                <a href="https://x.com/Loup_Garou_ynu">
+                    <img src="/images/X.png" height="40px" width="40px">
+                </a>
+            </div>
+            <div class="line">
+                <a href="https://page.line.me/847zitjn">
+                    <img src="/images/LINE.png" height="40px" width="40px">
+                </a>
+            </div> 
+        </div>
+    </footer>
+    <!----- /footer ----->
+</body>
+</html>

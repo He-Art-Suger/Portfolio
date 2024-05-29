@@ -1,0 +1,38 @@
+.footer {
+    color: #fff;
+    background-color:#7f001b;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 4;
+}
+
+.myprofile {
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.my_about {
+    margin-bottom: 20px;
+}
+
+.sns {
+    background-color:#7f001b
+}
+
+.sns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+}
+
+.sns img {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}

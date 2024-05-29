@@ -1,0 +1,27 @@
+#header {
+    position: relative;
+    z-index: 2;
+}
+
+.position{
+    display: flex;
+    position:relative;
+    z-index: 1;
+}
+
+.position #main {
+    margin-left: 0;
+    margin-right: auto;
+    width: 80%;
+}
+
+.position #aside {
+    width: 18%;
+}
+
+.aside_topic {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+
+}

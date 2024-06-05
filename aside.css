@@ -8,6 +8,16 @@
     margin-top: 0.5em;
 }
 
+.aside_title_experience {
+    text-align: center;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-left: solid 10px #7f001b;/*左線*/
+    border-bottom: solid 3px #7f001b;/*下線*/
+    background-color: #fff;
+    margin-top: 0.5em;
+}
+
 .aside_initial::first-letter {
     color: #7f001b;
 }

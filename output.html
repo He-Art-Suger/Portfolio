@@ -28,7 +28,12 @@
  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
  <!-- [endif] -->
- <script src="navclick.js"></script>
+
+ <!--JQueryの追加-->
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+ <!--scrollfadeの追加-->
+ <link rel="stylesheet" href="scrollfade.css">
+ <script src="scrollfade.js"></script>
 
 
 </head>
@@ -84,48 +89,68 @@
     <div class="position">
         <!----- main -----> 
         <article id="main">
-            <div id="OthelloGame"><div class="title">OthelloGame</div></div>
-                <p>通常のオセロゲームと時間測定機能を導入したオセロゲームの2種類。</p>
-                <p>基本的なゲーム制作システムを駆使したグループ開発第1作。</p>
-                <p>使用言語:Java</p>
-                <div class="image_set">
-                    <img src="https://github.com/He-Art-Suger/Portfolio/blob/main/images/othello1.PNG?raw=true" height="600px">
-                    <img src="https://github.com/He-Art-Suger/Portfolio/blob/main/images/othello2.PNG?raw=true" height="600px">
+            <div id="OthelloGame"><div class="title">OthelloGame</div>
+                <div class="js-scroll -a">
+                    <p>通常のオセロゲームと時間測定機能を導入したオセロゲームの2種類。</p>
+                    <p>基本的なゲーム制作システムを駆使したグループ開発第1作。</p>
+                    <p>使用言語:Java</p>
+                    <div class="image_set">
+                        <img src="https://github.com/He-Art-Suger/Portfolio/blob/main/images/othello1.PNG?raw=true" height="600px">
+                        <img src="https://github.com/He-Art-Suger/Portfolio/blob/main/images/othello2.PNG?raw=true" height="600px">
+                    </div>
                 </div>
-            <div id="SinkeiSuijaku"><div class="title">SinkeiSuijaku</div></div>
-                <p>特殊な効果を持つカードを含めた神経衰弱。</p>
-                <p>ポイントが多くなるカードや盤面のリシャッフルカードなど神経衰弱を盛り上げる要素や
-                    CPU難易度も3段階用意されており初心者から上級者まで楽しめる。</p>
-                <p>使用言語:Java</p>
-                <img src="https://github.com/He-Art-Suger/Portfolio/blob/main/images/sinkei1.jpeg?raw=true" height="600px">
-                <img src="https://github.com/He-Art-Suger/Portfolio/blob/main/images/sinkei2.jpeg?raw=true" height="600px">
+                <div class="scroll-bottom -a"></div>
+            </div>
+            <div id="SinkeiSuijaku"><div class="title">SinkeiSuijaku</div>
+                <div class="js-scroll -b">
+                    <p>特殊な効果を持つカードを含めた神経衰弱。</p>
+                    <p>ポイントが多くなるカードや盤面のリシャッフルカードなど神経衰弱を盛り上げる要素や
+                        CPU難易度も3段階用意されており初心者から上級者まで楽しめる。</p>
+                    <p>使用言語:Java</p>
+                    <img src="https://github.com/He-Art-Suger/Portfolio/blob/main/images/sinkei1.jpeg?raw=true" height="600px">
+                    <img src="https://github.com/He-Art-Suger/Portfolio/blob/main/images/sinkei2.jpeg?raw=true" height="600px">
+                </div>
+                <div class="scroll-bottom -b"></div>
+            </div>
             <div id="SugorokuUI"><div class="title">SugorokuUI</div></div>
-                <p>双六ゲームのマップやコマの移動に関するUI。</p>
-                <p>+マス、-マス、イベントマスを配置し、イベントマスはChatGPTによるイベントの
-                    生成が発生（未実装）。</p>
-                <p>使用言語:Unity</p>
-                <video controls src="images/sugoroku1.mp4" width="800px"></video>
-            <div id="LINEbot"><div class="title">LINEbot</div></div>
-                <p>大学の学祭で作成したLINE謎解きのbot。</p>
-                <p>LINEbotのMessaging APIを用いて作成。フラグの進行に応じてユーザの入力に対する応答を変化させるシステムを導入し、
-                    応答のパターンを複数用意することでユーザフレンドリに。</p>
-                <p>使用言語:Google Apps Script(JavaScript)</p>
-                <div class="image_set">
-                    <img src="https://github.com/He-Art-Suger/Portfolio/blob/main/images/LINEbot1.jpeg?raw=true" height="600px">
-                    <img src="https://github.com/He-Art-Suger/Portfolio/blob/main/images/LINEbot2.jpeg?raw=true" height="600px">
+                <div class="js-scroll -c">
+                    <p>双六ゲームのマップやコマの移動に関するUI。</p>
+                    <p>+マス、-マス、イベントマスを配置し、イベントマスはChatGPTによるイベントの
+                        生成が発生（未実装）。</p>
+                    <p>使用言語:Unity</p>
+                    <video controls src="images/sugoroku1.mp4" width="800px"></video>
                 </div>
+                <div class="scroll-bottom -c"></div>
+            <div id="LINEbot"><div class="title">LINEbot</div></div>
+                <div class="js-scroll -d">
+                    <p>大学の学祭で作成したLINE謎解きのbot。</p>
+                    <p>LINEbotのMessaging APIを用いて作成。フラグの進行に応じてユーザの入力に対する応答を変化させるシステムを導入し、
+                        応答のパターンを複数用意することでユーザフレンドリに。</p>
+                    <p>使用言語:Google Apps Script(JavaScript)</p>
+                    <div class="image_set">
+                        <img src="https://github.com/He-Art-Suger/Portfolio/blob/main/images/LINEbot1.jpeg?raw=true" height="600px">
+                        <img src="https://github.com/He-Art-Suger/Portfolio/blob/main/images/LINEbot2.jpeg?raw=true" height="600px">
+                    </div>
+                </div>
+                <div class="scroll-bottom -d"></div>
             <div id="RIZAP_LP"><div class="title">RIZAP_LP</div></div>
-                <p>RIZAP株式会社様のインターンでの企画で、HTMLとCSSを用いてどのようなユーザに
-                    興味をもっていただけるかを企画したうえで、チームで開発したLPサイト。</p>
-                <p>限られた開発期間の中で、エフェクトや動きなどにも工夫を凝らしている。</p>
-                <p>使用言語:HTML, CSS</p>
-                <p>サイトURLは<a href="https://he-art-suger.github.io/RIZAP_LP/">こちら</a></p>
-                <img src="https://github.com/He-Art-Suger/Portfolio/blob/main/images/RIZAP_LP.jpeg?raw=true" height="600px">
+                <div class="js-scroll -e">
+                    <p>RIZAP株式会社様のインターンでの企画で、HTMLとCSSを用いてどのようなユーザに
+                        興味をもっていただけるかを企画したうえで、チームで開発したLPサイト。</p>
+                    <p>限られた開発期間の中で、エフェクトや動きなどにも工夫を凝らしている。</p>
+                    <p>使用言語:HTML, CSS</p>
+                    <p>サイトURLは<a href="https://he-art-suger.github.io/RIZAP_LP/">こちら</a></p>
+                    <img src="https://github.com/He-Art-Suger/Portfolio/blob/main/images/RIZAP_LP.jpeg?raw=true" height="600px">
+                </div>
+                <div class="scroll-bottom -e"></div>
             <div id="Portfolio"><div class="title">Portfolio</div></div>
-                <p>自身の経験や強み、成果物をアピールするためのWebサイト。</p>
-                <p>ポートフォリオそのものもWeb制作の技術を駆使して作成しており、
-                    今後習得する技術を用いてより充実したサイトにしていきたい。</p>
-                <p>使用言語:HTML, CSS</p>
+                <div class="js-scroll -f">
+                    <p>自身の経験や強み、成果物をアピールするためのWebサイト。</p>
+                    <p>ポートフォリオそのものもWeb制作の技術を駆使して作成しており、
+                        今後習得する技術を用いてより充実したサイトにしていきたい。</p>
+                    <p>使用言語:HTML, CSS, JQuery</p>
+                </div>
+                <div class="scroll-bottom -f"></div>
         </article>
         <!----- /main ----->
 
@@ -181,5 +206,6 @@
         </div>
     </footer>
     <!----- /footer ----->
+
 </body>
 </html>

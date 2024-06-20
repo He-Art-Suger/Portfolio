@@ -28,7 +28,10 @@
  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
  <!-- [endif] -->
- <script src="navclick.js"></script>
+  
+ <!--JQueryの追加-->
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+ <script src="scrollfade_noheight.js"></script>
 
 
 </head>
@@ -43,40 +46,48 @@
             <img src="https://github.com/He-Art-Suger/Portfolio/blob/main/images/header.png?raw=true">
         </div>
         <div class="menu">
-            <details class="details">
-                <summary class="header_summary">T O P</summary>
-                    <div class="summary_lists">
-                        <li><a href="index.html#Information">Information</a></li>
-                        <li><a href="index.html#Links">Links</a></li>
-                    </div>
-            </details>
-            <details class="details">
-                <summary class="header_summary">A b o u t</summary>
-                    <div class="summary_lists">
-                        <li><a href="#Profile">Profile</li>
-                        <li><a href="#Skills">Skills</a></li>
-                        <li><a href="#Personality">Personality</a></li>
-                    </div>
-            </details>
-            <details class="details">
-                <summary class="header_summary">E x p e r i e n c e</summary>
-                    <div class="summary_lists">
-                        <li><a href="experience.html#Internship">Internship</a></li>
-                        <li><a href="experience.html#TeamDevelopment">Team Development</a></li>
-                        <li><a href="experience.html#SoloDevelopment">Solo Development</a></li>
-                    </div>
-            </details>
-            <details class="details">
-                <summary class="header_summary">O u t p u t</summary>
-                    <div class="summary_lists">
-                        <li><a href="output.html#OthelloGame">OthelloGame</a></li>
-                        <li><a href="output.html#SinkeiSuijaku">SinkeiSuijaku</a></li>
-                        <li><a href="output.html#SugorokuUI">SugorokuUI</a></li>
-                        <li><a href="output.html#LINEbot">LINEbot</a></li>
-                        <li><a href="output.html#RIZAP_LP">RIZAP_LP</a></li>
-                        <li><a href="output.html#Portfolio">Portfolio</a></li>
-                    </div>
-            </details>
+            <div class="details">
+                <div class="header_summary">
+                    <div class="summary_background"><a class="summary_name" href="#">T O P</a></div>
+                        <div class="summary_lists">
+                            <li><a href="index.html#Information">Information</a></li>
+                            <li><a href="index.html#Links">Links</a></li>
+                        </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="header_summary">
+                    <div class="summary_background"><a class="summary_name" href="#">A b o u t</a></div>
+                        <div class="summary_lists">
+                            <li><a href="#Profile">Profile</a></li>
+                            <li><a href="#Skills">Skills</a></li>
+                            <li><a href="#Personality">Personality</a></li>
+                        </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="header_summary">
+                    <div class="summary_background"><a class="summary_name" href="#">E x p e r i e n c e</a></div>
+                        <div class="summary_lists">
+                            <li><a href="experience.html#Internship">Internship</a></li>
+                            <li><a href="experience.html#TeamDevelopment">TeamDevelopment</a></li>
+                            <li><a href="experience.html#SoloDevelopment">SoloDevelopment</a></li>
+                        </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="header_summary">
+                    <div class="summary_background"><a class="summary_name" href="#">O u t p u t</a></div>
+                        <div class="summary_lists">
+                            <li><a href="output.html#OthelloGame">OthelloGame</a></li>
+                            <li><a href="output.html#SinkeiSuijaku">SinkeiSuijaku</a></li>
+                            <li><a href="output.html#SugorokuUI">SugorokuUI</a></li>
+                            <li><a href="output.html#LINEbot">LINEbot</a></li>
+                            <li><a href="output.html#RIZAP_LP">RIZAP_LP</a></li>
+                            <li><a href="output.html#Portfolio">Portfolio</a></li>
+                        </div>
+                </div>
+            </div>
         </div>
     </header>
     <!----- /header ----->
@@ -92,16 +103,22 @@
                 神奈川県横浜市保土ケ谷区常盤台79-1</p>
             <div id="Skills">
                 <div class="title">Skills</div>
-                <div class="mid_title">やり通す実行力</div>
+                <div class="mid_title js-scroll -a">やり通す実行力
+                    <div class="mid_title_underline"></div>
+                </div>
                 1つの物事に対して集中して取り組み、成し遂げるという経験を多く積んできたため、
                 一度決めたことをやり通す実行力が強みの1つです。</br>
-                <div class="mid_title">マネジメント力</div>
+                <div class="mid_title js-scroll -b">マネジメント力
+                    <div class="mid_title_underline"></div>
+                </div>
                 タスクを効率的に分散させるアプローチや、期限に間に合うように制作物のクオリティに
                 見切りをつけることを行うといったマネジメント力
             </div>
             <div id="Personality">
                 <div class="title">Personality</div>
-                <div class="mid_title">メンバーの意見調整</div>
+                <div class="mid_title js-scroll -c">メンバーの意見調整
+                    <div class="mid_title_underline"></div>
+                </div>
                 まとめて議論を重ねることはもちろん、感情が落ち着くまで待つ、励ましの言葉をかけるなど
                 議論に至るまでの感情のコントロールを行うことも経験</br>
             </div>

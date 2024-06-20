@@ -17,40 +17,36 @@
     margin-bottom: 50px;
 }
 
-/*
-.details[open] .header_summary{
+.summary_background:hover{
     background-color: #ac0025;
-    font-weight: bold;
-}
-*/
-
-.details .header_summary:hover{
-    background-color: #ac0025;
+    transition: background-color 0.5s;
     display: block;
 }
 
-#header .menu .details .header_summary li{
-    display: none;
-}
-
-#header .menu .details .header_summary li:hover{
-    display: block;
+.header_summary:hover .summary_lists{
+    transform: scaleY(1); /* ドロップダウンメニューの表示 */
 }
 
 /**********メニュー欄の仕様**********/
 .header_summary {
     display: block;
     list-style: none;
-    background-color: #7f001b;
+    color: #fff;
+    font-size: 25px;
+    flex-grow: 1;
+    position: relative;
+}
+
+.summary_background {
     border: solid 1px #000;
+    background-color: #7f001b;
+}
+
+.summary_name {
+    text-decoration: none;
     color: #fff;
     font-size: 25px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    flex-grow: 1;
-}
-
-.header_summary::-webkit-details-marker {
-    display: none;
 }
 
 .header_summary {
@@ -59,8 +55,13 @@
 
 .summary_lists{
     background-color: #333;
-    font-weight: bold;
     opacity: 0.8;
+    transform: scaleY(0); /* ドロップダウンメニューの非表示 */
+    transform-origin: center top; /* 変形を適応する基準を設定 */
+    transition: transform 0.3s; /* 表示の変化をアニメーション化 */
+    z-index: 1;
+    position: absolute;
+    width: 100%;
 }
 
 .summary_lists li{

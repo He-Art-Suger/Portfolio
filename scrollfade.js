@@ -7,8 +7,9 @@ $(function() {
     // ウィンドウがスクロールされるたびに実行される関数
     $(window).scroll(function () {
       // ".js-scroll"というクラスを持つすべての要素に対して処理を行う
-      var list1 = [".js-scroll.-a", ".js-scroll.-b", ".js-scroll.-c", ".js-scroll.-d", ".js-scroll.-e", ".js-scroll.-f"];
-      var list2 = [".scroll-bottom.-a", ".scroll-bottom.-b", ".scroll-bottom.-c", ".scroll-bottom.-d", ".scroll-bottom.-e", ".scroll-bottom.-f"];
+      var list1 = [".js-scroll.-a", ".js-scroll.-b", ".js-scroll.-c", ".js-scroll.-d", ".js-scroll.-e", ".js-scroll.-f", ".js-scroll.-g"];
+      var list2 = [".scroll-bottom.-a", ".scroll-bottom.-b", ".scroll-bottom.-c", 
+        ".scroll-bottom.-d", ".scroll-bottom.-e", ".scroll-bottom.-f", ".scroll-bottom.-g"];
       for(var i=0; i<list1.length; i++){
         $(list1[i]).each(function () {
           // 対象となる要素(js-scroll)の、ページの上からの位置を取得
